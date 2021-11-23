@@ -1,4 +1,4 @@
-package com.footballmatch.myapplication
+package com.footballmatch.severalwest
 
 import org.junit.Test
 

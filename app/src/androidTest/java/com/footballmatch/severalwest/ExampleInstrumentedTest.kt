@@ -1,4 +1,4 @@
-package com.footballmatch.myapplication
+package com.footballmatch.severalwest
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
