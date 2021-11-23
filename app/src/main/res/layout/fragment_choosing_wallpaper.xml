@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/choosing_wallpaper_library_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_choosing_wallpaper_library" />
+
+        <LinearLayout
+            android:id="@+id/choosing_wallpaper_one_linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choosing_wallpaper_library_img">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_one_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_choosing_wallpaper_one" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_two_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/ic_choosing_wallpaper_two" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_three_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/ic_choosing_wallpaper_three" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choosing_wallpaper_two_linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choosing_wallpaper_one_linearLayout">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_four_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_choosing_wallpaper_four" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_five_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/ic_choosing_wallpaper_five" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_six_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/ic_choosing_wallpaper_six" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choosing_wallpaper_two_linearLayout">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_seven_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_choosing_wallpaper_seven" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_eight_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/ic_choosing_wallpaper_eight" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/choosing_wallpaper_nine_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/ic_choosing_wallpaper_nine" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

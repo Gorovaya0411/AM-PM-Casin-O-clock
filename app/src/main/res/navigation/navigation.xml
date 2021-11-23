@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/alarmClockFragment">
+
+    <fragment
+        android:id="@+id/alarmClockFragment"
+        android:name="com.clocktime.severalwest.ui.alarm_clock.AlarmClockFragment"
+        android:label="fragment_alarm_clock"
+        tools:layout="@layout/fragment_alarm_clock">
+        <action
+            android:id="@+id/action_alarmClockFragment_to_addedAlarmClockFragment"
+            app:destination="@id/addedAlarmClockFragment" />
+        <action
+            android:id="@+id/action_alarmClockFragment_self"
+            app:destination="@id/alarmClockFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/watchFragment"
+        android:name="com.clocktime.severalwest.ui.watch.WatchFragment"
+        android:label="fragment_watch"
+        tools:layout="@layout/fragment_watch" />
+
+    <fragment
+        android:id="@+id/stopwatchFragment"
+        android:name="com.clocktime.severalwest.ui.stopwatch.StopwatchFragment"
+        android:label="fragment_stopwatch"
+        tools:layout="@layout/fragment_stopwatch" >
+        <action
+            android:id="@+id/action_stopwatchFragment_self"
+            app:destination="@id/stopwatchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/choosingWallpaperFragment"
+        android:name="com.clocktime.severalwest.ui.choosing_wallpaper.ChoosingWallpaperFragment"
+        android:label="fragment_choosing_wallpaper"
+        tools:layout="@layout/fragment_choosing_wallpaper" />
+    <fragment
+        android:id="@+id/addedAlarmClockFragment"
+        android:name="com.clocktime.severalwest.ui.added_alarm_clock.AddedAlarmClockFragment"
+        android:label="fragment_added_alarm_clock"
+        tools:layout="@layout/fragment_added_alarm_clock" />
+</navigation>

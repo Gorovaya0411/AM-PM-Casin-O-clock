@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_two">
+
+        <FrameLayout
+            android:id="@+id/stopwatch_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/stopwatch_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stopwatch_minutes_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_stopwatch_bg_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stopwatch_guideline"
+            app:layout_constraintStart_toStartOf="@+id/stopwatch_guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stopwatch_seconds_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_stopwatch_bg_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stopwatch_colon_two_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stopwatch_hour_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_stopwatch_bg_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stopwatch_colon_one_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stopwatch_colon_two_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_stopwatch_colon"
+            app:layout_constraintBottom_toBottomOf="@+id/stopwatch_minutes_img"
+            app:layout_constraintStart_toEndOf="@+id/stopwatch_minutes_img"
+            app:layout_constraintTop_toTopOf="@+id/stopwatch_minutes_img" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stopwatch_colon_one_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_stopwatch_colon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stopwatch_minutes_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stopwatch_hours_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/stopwatch_hour_img"
+            app:layout_constraintEnd_toEndOf="@+id/stopwatch_hour_img"
+            app:layout_constraintStart_toStartOf="@+id/stopwatch_hour_img"
+            app:layout_constraintTop_toTopOf="@+id/stopwatch_hour_img"
+            tools:text="00" />
+
+        <TextView
+            android:id="@+id/stopwatch_minutes_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/stopwatch_minutes_img"
+            app:layout_constraintEnd_toEndOf="@+id/stopwatch_minutes_img"
+            app:layout_constraintStart_toStartOf="@+id/stopwatch_minutes_img"
+            app:layout_constraintTop_toTopOf="@+id/stopwatch_minutes_img"
+            tools:text="00" />
+
+        <TextView
+            android:id="@+id/stopwatch_seconds_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/stopwatch_seconds_img"
+            app:layout_constraintEnd_toEndOf="@+id/stopwatch_seconds_img"
+            app:layout_constraintStart_toStartOf="@+id/stopwatch_seconds_img"
+            app:layout_constraintTop_toTopOf="@+id/stopwatch_seconds_img"
+            tools:text="00" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/stopwatch_discharge_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_stopwatch_discharge"
+            app:layout_constraintEnd_toStartOf="@+id/stopwatch_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/stopwatch_minutes_img" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/stopwatch_start_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_stopwatch_start"
+            app:layout_constraintStart_toEndOf="@+id/stopwatch_discharge_img_btn"
+            app:layout_constraintTop_toBottomOf="@+id/stopwatch_minutes_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

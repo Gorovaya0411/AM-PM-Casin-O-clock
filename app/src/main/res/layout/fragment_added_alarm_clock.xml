@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_two">
+
+        <FrameLayout
+            android:id="@+id/added_alarm_Clock_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/alarmClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/added_alarm_clock_colon_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_added_alarm_clock_colon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/added_alarm_clock_bg_minutes_img"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/added_alarm_clock_bg_hours_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_added_alarm_clock_bg_clock"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/added_alarm_clock_colon_img"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/added_alarm_clock_bg_minutes_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_added_alarm_clock_bg_clock"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/added_alarm_clock_hours_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/white"
+                    android:textSize="75sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/added_alarm_clock_bg_hours_img"
+                    app:layout_constraintEnd_toEndOf="@+id/added_alarm_clock_bg_hours_img"
+                    app:layout_constraintStart_toStartOf="@+id/added_alarm_clock_bg_hours_img"
+                    app:layout_constraintTop_toTopOf="@+id/added_alarm_clock_bg_hours_img"
+                    tools:text="00" />
+
+                <TextView
+                    android:id="@+id/added_alarm_clock_minutes_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/white"
+                    android:textSize="75sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/added_alarm_clock_bg_minutes_img"
+                    app:layout_constraintEnd_toEndOf="@+id/added_alarm_clock_bg_minutes_img"
+                    app:layout_constraintStart_toStartOf="@+id/added_alarm_clock_bg_minutes_img"
+                    app:layout_constraintTop_toTopOf="@+id/added_alarm_clock_bg_minutes_img"
+                    tools:text="00" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/added_alarm_clock_calendar_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_added_alarm_clock_calendar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/added_alarm_clock_calendar_img"
+                    app:layout_constraintStart_toStartOf="@+id/added_alarm_clock_calendar_img">
+
+                    <CheckBox
+                        android:id="@+id/added_alarm_clock_mon_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:button="@drawable/checkbox_selector" />
+
+                    <CheckBox
+                        android:id="@+id/added_alarm_clock_tue_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:button="@drawable/checkbox_selector" />
+
+                    <CheckBox
+                        android:id="@+id/added_alarm_clock_wed_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:button="@drawable/checkbox_selector" />
+
+                    <CheckBox
+                        android:id="@+id/added_alarm_clock_thu_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:button="@drawable/checkbox_selector" />
+
+                    <CheckBox
+                        android:id="@+id/added_alarm_clock_fri_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:button="@drawable/checkbox_selector" />
+
+                    <CheckBox
+                        android:id="@+id/added_alarm_clock_sat_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:button="@drawable/checkbox_selector" />
+
+                    <CheckBox
+                        android:id="@+id/added_alarm_clock_sun_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/added_alarm_clock_comment_img_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_added_alarm_clock_comment"
+                    app:layout_constraintEnd_toEndOf="@+id/added_alarm_clock_comment_edit_txt"
+                    app:layout_constraintStart_toStartOf="@+id/added_alarm_clock_comment_edit_txt"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/added_alarm_clock_comment_edit_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/font"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/comment"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/color_for_text"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/added_alarm_clock_comment_img_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/added_alarm_clock_save_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_added_alarm_clock_save" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

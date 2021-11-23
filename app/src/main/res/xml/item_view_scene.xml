@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+
+    <Transition
+        app:constraintSetEnd="@+id/start"
+        app:constraintSetStart="@+id/end"
+        app:duration="300"
+        motion:autoTransition="animateToEnd">
+
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:onTouchUp="autoComplete"
+            app:touchAnchorId="@id/topCard"
+            app:touchAnchorSide="left"
+            app:touchRegionId="@id/topCard" />
+    </Transition>
+
+    <Transition
+
+        app:constraintSetEnd="@+id/start"
+        app:constraintSetStart="@+id/end"
+        app:duration="300">
+
+        <OnSwipe
+            app:dragDirection="dragRight"
+            app:onTouchUp="autoComplete"
+            app:touchAnchorId="@+id/topCard"
+            app:touchAnchorSide="right"
+            app:touchRegionId="@id/topCard" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/item_view_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/item_view_delete_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="@id/item_view_constraint_layout"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_editor_absoluteX="282dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/item_view_delete_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.36" />
+    </ConstraintSet>
+</MotionScene>
